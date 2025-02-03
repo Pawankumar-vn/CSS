@@ -1,81 +1,101 @@
-/_ * CSS BASICS AND TYPOGRAPHY * _/
+```css
+CSS BASICS AND TYPOGRAPHY
 
-/\* 1. INTRODUCTION TO CSS
+1. INTRODUCTION TO CSS
 
-- CSS stands for Cascading Style Sheets.
-- It is used to style HTML elements (e.g., colors, fonts, layouts).
-  \*/
+  • CSS stands for Cascading Style Sheets.  
+    It is used to style HTML elements (e.g., colors, fonts, layouts).
 
-/_ 2. HOW TO INCLUDE CSS IN HTML _/
+  
+2. HOW TO INCLUDE CSS IN HTML
 
-/_ - Inline CSS: Add styles directly to an HTML element using the "style" attribute. _/
+  • Inline CSS: Add styles directly to an HTML element using the "style" attribute.  
+    <p style="color: red; font-size: 16px;">This is inline CSS.</p>
 
-<p style="color: red; font-size: 16px;">This is inline CSS.</p>
+  • Internal CSS: Add styles inside a <style> tag in the <head> section of HTML.  
+    <style>  
+        p {  
+            color: blue;  
+            font-size: 18px;  
+        }  
+    </style>
 
-/_ - Internal CSS: Add styles inside a <style> tag in the <head> section of HTML. _/
+  • External CSS: Link an external .css file using the <link> tag in the <head> section.  
+    <link rel="stylesheet" href="styles.css">
 
-<style>
-    p {
-        color: blue;      /* Sets the text color to blue */
-        font-size: 18px;  /* Sets the font size to 18px */
+
+3. CSS SYNTAX AND SELECTORS
+
+  • CSS syntax consists of a selector and a property value pair.  
+    selector { property: value; }
+
+  Types of Selectors:  
+  • Universal selector: * { }  
+  • Element selector: p { }  
+  • Class selector: .class-name { }  
+  • ID selector: #id-name { }
+
+  
+  • Element Selector:  
+    Targets HTML elements by tag name.  
+
+    h1 {  
+        color: green;  
     }
-</style>
 
-/_ - External CSS: Link an external .css file using the <link> tag in the <head> section. _/
+  • Class Selector:  
+    Targets elements with a specific class (use .classname).  
 
-<link rel="stylesheet" href="styles.css">
+    .my-class {  
+        font-size: 20px;  
+    }
 
-/_ 3. CSS SYNTAX AND SELECTORS _/
+  • ID Selector:  
+    Targets a single element with a specific ID (use #idname).  
 
-/_ - Syntax: selector { property: value; } _/
+    #my-id {  
+        color: purple;  
+    }
 
-/_ - Element Selector: Targets HTML elements by tag name. _/
-h1 {
-color: green; /_ Sets the color of <h1> text to green _/
-}
+  
+4. TYPOGRAPHY
 
-/_ Types of Selectors: _/
-/_ 1. Universal selector: _ { } _/
-/_ 2. Element selector: p { } _/
-/_ 3. Class selector: .class-name { } _/
-/_ 4. ID selector: #id-name { } \*/
+  • Font Properties:  
+    Used to set the font type, size, style, and weight.  
 
-/_ - Class Selector: Targets elements with a specific class (use .classname). _/
-.my-class {
-font-size: 20px; /_ Sets font size to 20px for elements with class "my-class" _/
-}
+    p {  
+        font-family: Arial, sans-serif;  
+        font-size: 16px;  
+        font-style: italic;  
+        font-weight: bold;  
+    }
 
-/_ - ID Selector: Targets a single element with a specific ID (use #idname). _/
-#my-id {
-color: purple; /_ Sets the color of element with ID "my-id" to purple _/
-}
+  • Text Properties:  
+    Controls text alignment, decoration, and transformation.  
 
-/_ 4. TYPOGRAPHY _/
+    h2 {  
+        text-align: center;  
+        text-decoration: underline;  
+        text-transform: uppercase;  
+    }
 
-/_ - Font Properties _/
-p {
-font-family: Arial, sans-serif; /_ Sets the font family to Arial or sans-serif _/
-font-size: 16px; /_ Sets the font size to 16px _/
-font-style: italic; /_ Makes the text italic _/
-font-weight: bold; /_ Makes the text bold _/
-}
+  • Line Spacing:  
+    Controls the space between lines of text.  
 
-/_ - Text Properties _/
-h2 {
-text-align: center; /_ Aligns the text to the center _/
-text-decoration: underline; /_ Underlines the text _/
-text-transform: uppercase; /_ Converts the text to uppercase _/
-}
+    p {  
+        line-height: 1.5;  
+    }
 
-/_ - Line Spacing _/
-p {
-line-height: 1.5; /_ Sets the space between lines (1.5 times the font size) _/
-}
+  • Letter and Word Spacing:  
+    Adjusts the space between letters and words.  
 
-/_ - Letter and Word Spacing _/
-h3 {
-letter-spacing: 2px; /_ Adds 2px space between letters _/
-word-spacing: 5px; /_ Adds 5px space between words _/
-}
+    h3 {  
+        letter-spacing: 2px;  
+        word-spacing: 5px;  
+    }
 
-/_ END OF NOTES _/
+
+END OF NOTES
+
+
+
