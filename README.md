@@ -1,6 +1,6 @@
 # CSS Basics - Notes & Code for Revision
 
-This repository contains notes and code examples on the basics of CSS, organized into 7 days of learning. The notes cover essential CSS concepts and properties, providing a foundation for CSS beginners. The repository will be updated with more files as learning progresses.
+This repository contains notes and code examples on the basics of CSS, organized into 12 days of learning. The notes cover essential CSS concepts and properties, providing a foundation for CSS beginners. The repository will be updated with more files as learning progresses.
 
 ---
 
@@ -85,12 +85,48 @@ This repository contains notes and code examples on the basics of CSS, organized
 
 ---
 
-### Updates
+## Day 8: 2D Transformations
 
-This repository will be updated with more topics and files as the learning progresses.
+**Main Topics:**
+- 2D Transformations
+  - `translate`, `rotate`, `scale`, `skew`
+
+---
+
+## Day 9: 3D Transformations
+
+**Main Topics:**
+- 3D Transformations
+  - `perspective`, `rotate3d`, `translate3d`
+
+---
+
+## Day 10: CSS Grid
+
+**Main Topics:**
+- CSS Grid Basics
+  - Defining grid containers and grid items
+  - Grid lines, tracks, and areas
+
+---
+
+## Day 11: Responsive Grid
+
+**Main Topics:**
+- Responsive Grid
+  - Using `grid-template-areas`
+  - Combining grid with media queries for responsive layouts
+  - `grid: autofit`, `minmax`
+
+---
+
+## Day 12: Introduction to SASS
+
+**Main Topics:**
+- What is SASS?
+- SASS syntax: Variables, nesting, mixins, and functions
 
 ---
 
 Feel free to explore the files for code examples, and keep revisiting them as a quick reference for revision.
-
 
